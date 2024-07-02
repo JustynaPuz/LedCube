@@ -1,22 +1,23 @@
-# Pliki systemowe
+# System files
 .DS_Store
 Thumbs.db
 
-# Pliki i foldery wygenerowane przez IDE
+# STM32CubeIDE
+# IDE specific files
 /.settings
 /.vscode
 .cproject
 .project
 
-# Katalogi build
-/Debug
-/Release
+# Build directories
+/Debug/
+/Release/
 
-# Pliki tymczasowe i logi
+# Temporary and log files
 *.log
 *.tmp
 
-# Pliki wygenerowane przez kompilator
+# Compiler generated files
 *.o
 *.d
 *.elf
@@ -26,7 +27,7 @@ Thumbs.db
 *.srec
 *.lst
 
-# Pliki konfiguracyjne systemu operacyjnego
+# OS specific files
 *.swp
 *~
 
