@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LedCubeApplication</string>
+    <string name="title_activity_screen_after_connection">ScreenAfterConnection</string>
+    <string name="title_activity_modes">Modes</string>
+</resources>
