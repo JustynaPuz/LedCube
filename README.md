@@ -9,12 +9,7 @@
    - [Diody LED](#diody-led)
    - [Tryby świecenia](#tryby-świecenia)
    - [Moduł Bluetooth](#moduł-bluetooth)
-   - [Aplikacja](#aplikacja)
-6. [Zdjęcia projektu](#zdjęcia-projektu)
-   - [Lutowanie kostki](#lutowanie-kostki)
-   - [Piny PA2 i PA3](#piny-pa2-i-pa3)
-   - [Moduł Bluetooth](#moduł-bluetooth-2)
-   - [Obsługa Bluetooth w aplikacji](#obsługa-bluetooth-w-aplikacji)
+6. [Aplikacja](#aplikacja)
 
 ## Opis projektu
 
