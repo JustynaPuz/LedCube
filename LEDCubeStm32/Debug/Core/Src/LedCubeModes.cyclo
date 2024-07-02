@@ -1,0 +1,14 @@
+../Core/Src/LedCubeModes.c:41:9:findPinMap	3
+../Core/Src/LedCubeModes.c:50:6:flickerOn	2
+../Core/Src/LedCubeModes.c:64:6:disableAllPins	3
+../Core/Src/LedCubeModes.c:74:6:enableAllPins	3
+../Core/Src/LedCubeModes.c:84:6:turnColumnsOff	2
+../Core/Src/LedCubeModes.c:93:6:turnOnAndOffAllByLayerUpAndDownNotTimed	6
+../Core/Src/LedCubeModes.c:123:6:turnOnAndOffAllByColumnSideways	19
+../Core/Src/LedCubeModes.c:234:6:layerstompUpAndDown	8
+../Core/Src/LedCubeModes.c:272:6:flickerOff	2
+../Core/Src/LedCubeModes.c:284:6:aroundEdgeDown	3
+../Core/Src/LedCubeModes.c:350:6:diagonalRectangle	11
+../Core/Src/LedCubeModes.c:446:6:propeller	3
+../Core/Src/LedCubeModes.c:510:6:spiralInAndOut	2
+../Core/Src/LedCubeModes.c:648:6:goThroughAllLedsOneAtATime	10
