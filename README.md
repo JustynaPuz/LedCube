@@ -73,3 +73,26 @@ Moduł Bluetooth HC-05 umożliwia bezprzewodową komunikację między LedCube a 
 
 Aplikacja mobilna jest kluczowym elementem systemu, umożliwiając użytkownikowi interakcję z LedCube. Pozwala połączyć się z modułem, a później za pomocą interfejsu sterować trybami świecenia lub osobną diodą LED. Jest napisana na system Android.
 
+Klasa MainActivity
+Główna klasa aplikacji odpowiadająca za ekran startowy oraz połączenie Bluetooth z kostką LED. To
+tutaj sprawdzane są uprawnienia, przeszukiwana jest lista urządzeń bluetooth dostępnych w okolicy,
+podejmowana jest próba połączenia z modułem bluetooth HC-05. W razie problemów z połączeniem
+pokazywane są odpowiednie komunikaty.
+
+ScreenAfterConnection
+Drugi ekran pokazuje się po uzyskanym połaczeniu. Na ekranie widać trze przyciski : TURN ON służy
+do włączenia wszystkich ledów oraz lampki sprawdzającej, a TURN OFF analogicznie do wyłączenia. Po
+naciśnięciu przycisku MODES możemy przejść do ekranu, który umożliwia nam wybór trybów świecenia
+kostki.
+
+Modes
+Ekran służacy do wybierania trybów świecenia kostki. Po wybrani opcji tryby wyswietlane są w pętli.
+Można anulować wyświetlanie trybu przez odznaczenie wybranej opcji.
+
+
+| | | |
+|:-:|:-:|:-:|
+| ![Alt text 1](ścieżka/do/obrazu1.jpg) | ![Alt text 2](ścieżka/do/obrazu2.jpg) | ![Alt text 3](ścieżka/do/obrazu3.jpg) |
+
+
+
