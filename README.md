@@ -92,7 +92,7 @@ Można anulować wyświetlanie trybu przez odznaczenie wybranej opcji.
 
 | | | |
 |:-:|:-:|:-:|
-| ![Alt text 1](ścieżka/do/obrazu1.jpg) | ![Alt text 2](ścieżka/do/obrazu2.jpg) | ![Alt text 3](ścieżka/do/obrazu3.jpg) |
+| ![Alt text 1](images/glowny.jpg) | ![Alt text 2](images/poPolaczeniu.jpg) | ![Alt text 3](images/tryby.jpg) |
 
 
 
