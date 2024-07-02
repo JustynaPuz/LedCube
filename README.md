@@ -1,7 +1,5 @@
 # LedCube z modułem Bluetooth
 
-**Autor**: Justyna Puz
-
 ## Spis treści
 1. [Opis projektu](#opis-projektu)
 2. [Funkcjonalności](#funkcjonalności)
@@ -42,8 +40,8 @@ LedCube to kostka 4x4x4 zbudowana z 64 niebieskich diod LED. Do każdej pionowej
 - Telefon z systemem Android
 
 ## Schemat
+![Alt text](/images/schemat.png)
 
-(Schemat podłączeń komponentów. Dodaj tutaj rysunki lub diagramy, jeśli są dostępne.)
 
 ## Szczegółowy opis działania elementów systemu
 
@@ -75,20 +73,3 @@ Moduł Bluetooth HC-05 umożliwia bezprzewodową komunikację między LedCube a 
 
 Aplikacja mobilna jest kluczowym elementem systemu, umożliwiając użytkownikowi interakcję z LedCube. Pozwala połączyć się z modułem, a później za pomocą interfejsu sterować trybami świecenia lub osobną diodą LED. Jest napisana na system Android.
 
-## Zdjęcia projektu
-
-### Lutowanie kostki
-
-Podczas pierwszego etapu pracy, czyli tworzenia kostki LED, wybrałam drut, który później okazał się bardzo trudny do lutowania. Na tym etapie miałam dostępny lepszy sprzęt, jednak później, podczas lutowania przewodów, moja lutownica okazała się za słaba i zawodna.
-
-### Piny PA2 i PA3
-
-Po podłączeniu wszystkich przewodów okazało się, że na piny PA2 i PA3 nie można podawać napięcia w taki sposób, żeby diody LED działały. Musiałam przepiąć przewody do innych wyjść.
-
-### Moduł Bluetooth
-
-Po podłączeniu modułu Bluetooth nie byłam w stanie poprawnie odbierać komend z aplikacji terminalowej. Problemem okazał się warunek if w obsłudze przerwania oraz ustawienie baud rate w USART.
-
-### Obsługa Bluetooth w aplikacji
-
-Bardzo dużo problemów pojawiło się przy połączeniu Bluetooth. Gdy udało się uzyskać połączenie, okazało się, że wysyłanie komend nie działa. Po długich poszukiwaniach i debugowaniu okazało się, że problemem był brak znaku `\r` na końcu wysyłanej komendy, przez co przerwanie nie kończyło się poprawnie.
