@@ -1,7 +1,5 @@
 # LedCube z modułem Bluetooth
 
-**Autor**: Justyna Puz
-
 ## Spis treści
 1. [Opis projektu](#opis-projektu)
 2. [Funkcjonalności](#funkcjonalności)
@@ -42,8 +40,8 @@ LedCube to kostka 4x4x4 zbudowana z 64 niebieskich diod LED. Do każdej pionowej
 - Telefon z systemem Android
 
 ## Schemat
+![Alt text](/images/schemat.png)
 
-(Schemat podłączeń komponentów. Dodaj tutaj rysunki lub diagramy, jeśli są dostępne.)
 
 ## Szczegółowy opis działania elementów systemu
 
@@ -75,20 +73,26 @@ Moduł Bluetooth HC-05 umożliwia bezprzewodową komunikację między LedCube a 
 
 Aplikacja mobilna jest kluczowym elementem systemu, umożliwiając użytkownikowi interakcję z LedCube. Pozwala połączyć się z modułem, a później za pomocą interfejsu sterować trybami świecenia lub osobną diodą LED. Jest napisana na system Android.
 
-## Zdjęcia projektu
+Klasa MainActivity
+Główna klasa aplikacji odpowiadająca za ekran startowy oraz połączenie Bluetooth z kostką LED. To
+tutaj sprawdzane są uprawnienia, przeszukiwana jest lista urządzeń bluetooth dostępnych w okolicy,
+podejmowana jest próba połączenia z modułem bluetooth HC-05. W razie problemów z połączeniem
+pokazywane są odpowiednie komunikaty.
 
-### Lutowanie kostki
+ScreenAfterConnection
+Drugi ekran pokazuje się po uzyskanym połaczeniu. Na ekranie widać trze przyciski : TURN ON służy
+do włączenia wszystkich ledów oraz lampki sprawdzającej, a TURN OFF analogicznie do wyłączenia. Po
+naciśnięciu przycisku MODES możemy przejść do ekranu, który umożliwia nam wybór trybów świecenia
+kostki.
 
-Podczas pierwszego etapu pracy, czyli tworzenia kostki LED, wybrałam drut, który później okazał się bardzo trudny do lutowania. Na tym etapie miałam dostępny lepszy sprzęt, jednak później, podczas lutowania przewodów, moja lutownica okazała się za słaba i zawodna.
+Modes
+Ekran służacy do wybierania trybów świecenia kostki. Po wybrani opcji tryby wyswietlane są w pętli.
+Można anulować wyświetlanie trybu przez odznaczenie wybranej opcji.
 
-### Piny PA2 i PA3
 
-Po podłączeniu wszystkich przewodów okazało się, że na piny PA2 i PA3 nie można podawać napięcia w taki sposób, żeby diody LED działały. Musiałam przepiąć przewody do innych wyjść.
+| | | |
+|:-:|:-:|:-:|
+| ![Alt text 1](ścieżka/do/obrazu1.jpg) | ![Alt text 2](ścieżka/do/obrazu2.jpg) | ![Alt text 3](ścieżka/do/obrazu3.jpg) |
 
-### Moduł Bluetooth
 
-Po podłączeniu modułu Bluetooth nie byłam w stanie poprawnie odbierać komend z aplikacji terminalowej. Problemem okazał się warunek if w obsłudze przerwania oraz ustawienie baud rate w USART.
 
-### Obsługa Bluetooth w aplikacji
-
-Bardzo dużo problemów pojawiło się przy połączeniu Bluetooth. Gdy udało się uzyskać połączenie, okazało się, że wysyłanie komend nie działa. Po długich poszukiwaniach i debugowaniu okazało się, że problemem był brak znaku `\r` na końcu wysyłanej komendy, przez co przerwanie nie kończyło się poprawnie.
