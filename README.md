@@ -1,6 +1,6 @@
 # LedCube z modułem Bluetooth
 
-**Autor**: Justyna Puz, 263469
+**Autor**: Justyna Puz
 
 ## Spis treści
 1. [Opis projektu](#opis-projektu)
