@@ -69,23 +69,23 @@ Tryby:
 
 Moduł Bluetooth HC-05 umożliwia bezprzewodową komunikację między LedCube a urządzeniem mobilnym. HC-05 jest powszechnie używanym modułem Bluetooth, który obsługuje standardy Bluetooth 2.0. W projekcie moduł ten jest odpowiedzialny za odbieranie komend z aplikacji mobilnej i przekazywanie ich do mikrokontrolera STM32F401RE. Komunikacja odbywa się przez interfejs UART, co pozwala na szybkie i niezawodne przesyłanie danych.
 
-### Aplikacja
+## Aplikacja
 
 Aplikacja mobilna jest kluczowym elementem systemu, umożliwiając użytkownikowi interakcję z LedCube. Pozwala połączyć się z modułem, a później za pomocą interfejsu sterować trybami świecenia lub osobną diodą LED. Jest napisana na system Android.
 
-Klasa MainActivity
+### Klasa MainActivity
 Główna klasa aplikacji odpowiadająca za ekran startowy oraz połączenie Bluetooth z kostką LED. To
 tutaj sprawdzane są uprawnienia, przeszukiwana jest lista urządzeń bluetooth dostępnych w okolicy,
 podejmowana jest próba połączenia z modułem bluetooth HC-05. W razie problemów z połączeniem
 pokazywane są odpowiednie komunikaty.
 
-ScreenAfterConnection
+### ScreenAfterConnection
 Drugi ekran pokazuje się po uzyskanym połaczeniu. Na ekranie widać trze przyciski : TURN ON służy
 do włączenia wszystkich ledów oraz lampki sprawdzającej, a TURN OFF analogicznie do wyłączenia. Po
 naciśnięciu przycisku MODES możemy przejść do ekranu, który umożliwia nam wybór trybów świecenia
 kostki.
 
-Modes
+### Modes
 Ekran służacy do wybierania trybów świecenia kostki. Po wybrani opcji tryby wyswietlane są w pętli.
 Można anulować wyświetlanie trybu przez odznaczenie wybranej opcji.
 
